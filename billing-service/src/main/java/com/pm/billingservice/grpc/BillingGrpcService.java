@@ -29,6 +29,7 @@ public class BillingGrpcService extends BillingServiceImplBase {
                 .setAccountId("12345")
                 .setStatus("ACTIVE")
                 .build();
+
         responseObserver.onNext(response); // başka bir response data döndüreceksek 1 satırda daha yine bunu yazıp yapabiliriz.
         responseObserver.onCompleted(); // we can end the cycle in this response
     }
